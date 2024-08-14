@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kremer</title>
+    <link rel="Icon" href="/imglogo/images.png"> <!-- img browser-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- biblioteca icon fontawesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Link biblioteca google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Link biblioteca google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"><!-- Link biblioteca google fonts-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- link bootstrap 4-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- link slick.js-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- link convertido em theme slick.js css-->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/script.js">
+</head>
+
+<body onload="verificarIdade()"> <!-- Verificar idade-->
+    <!-- Inicio barra de navegação-->
+    <header>
+        <span> <!-- Logo da pag-->
+            <a href="#me"> <img id="img-logo-cerveja" src="/estagio HTM,CSS/imglogo/logotipo-kremer-cervejaria.png"
+                    alt=""></a>
+        </span>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu"> <!-- Menu respansivo -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a id="remove-sublime" href="FORindex.html"> Home </li></a>
+                <li><a id="remove-sublime" href=" #me"> Grupo </li></a>
+                <li><a id="remove-sublime" href=" #me"> Atuação </li></a>
+                <li><a id="remove-sublime" href=" #me"> Produtos </li></a>
+                <li><a id="remove-sublime" href=" #me"> Contato </li></a>
+            </ul>
+            </div>
+        </nav>
+        <span> <!-- Endereço-->
+            <a id="span-two-nav-contato" href="#me"><i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"> |
+                    SÃO vicente</i></a>
+        </span>
+    </header>
+    <!-- Final barra de navegação-->
+
+    <section> <!-- Carousel com utilizando slick.js primeira sessão -->
+        <div class="slick-carousel">
+            <img id="img-slide" src="/estagio HTM,CSS/imgSessão/capa kreme.png" alt="">
+            <img id="img-slide" src="/estagio HTM,CSS/imgSessão/capa.png" alt="">
+            <img id="img-slide" src="/estagio HTM,CSS/imgSessão/capa (1).png" alt="">
+        </div>
+    </section><!-- Fim slick.js Primeira sessão -->
+
+
+    <section class="container-informaçoes"> <!-- Segunda sessão Card info sobre qualidades da empresa -->
+        <div id="container-geral-info">
+            <div class="card-sessao-empresa">
+                <img id="img-sobre-card"
+                    src="/estagio HTM,CSS/imgcard/4994259-icone-de-de-aperto-de-mao-de-negocios-gratis-vetor.png"
+                    alt="Imagem do cartão">
+                <div class="card-content">
+                    <h2 class="card-title">Compromisso</h2>
+                    <hr>
+                    <p class="card-text">Na Kremer, há um forte compromisso com práticas sustentáveis, utilizando
+                        ingredientes locais,
+                        reduzindo o desperdício e adotando métodos de produção ecológicos.</p>
+                </div>
+            </div>
+            <div class="card-sessao-empresa">
+                <img id="img-sobre-card" src="/estagio HTM,CSS/imgcard/dedicação.png" alt="Imagem do cartão">
+                <div class="card-content">
+                    <h2 class="card-title">Dedicação</h2>
+                    <hr>
+                    <p class="card-text">Por trás de cada cerveja Kremer está o trabalho árduo dos mestres cervejeiros.
+                    </p>
+                </div>
+            </div>
+            <div class="card-sessao-empresa">
+                <img id="img-sobre-card" src="/estagio HTM,CSS/imgcard/variedade.png" alt="Imagem do cartão">
+                <div class="card-content">
+                    <h2 class="card-title">Variedade</h2>
+                    <hr>
+                    <p class="card-text"> A Kremer oferece uma vasta gama de estilos, desde IPAs lupuladas até stouts
+                        encorpadas.</p>
+                </div>
+            </div>
+            <div class="card-sessao-empresa">
+                <img id="img-sobre-card" src="/estagio HTM,CSS/imgcard/cerveja.png" alt="Imagem do cartão">
+                <div class="card-content">
+                    <h2 class="card-title">Ingredientes</h2>
+                    <hr>
+                    <p class="card-text">Na Kremer, a qualidade começa com a seleção dos melhores ingredientes.</p>
+                </div>
+            </div>
+        </div>
+    </section><!-- Segunda sessão Card info sobre qualidades da empresa -->
+
+
+    <section class="sobre-empresa"><!-- Terceira sessão Card info sobre qualidades da empresa -->
+        <div class="container-name-empresa"> <!--Logo Kremer meio da sessão -->
+            <div class="name-empresa">
+                <img id="logo-kremer-sobre" src="/estagio HTM,CSS/imglogo/logotipo-kremer-cervejaria.png" alt="">
+            </div> <!--Logo Kremer meio da sessão acaba aqui -->
+        </div>
+        <div class="card-empresa-sobre"> <!-- Inicio sobre time Kremer -->
+            <img src="/estagio HTM,CSS/imgfuncionarios/timekremer.jpg" alt="Imagem de Cerveja" class="card-img">
+            <!--Time Kremer meio da sessão FOTO -->
+            <div class="card-content-empresa-sobre"> <!--Time Kremer meio da sessão div para controlar -->
+                <h2 class="card-title-empresa">Kreme Cervejaria Artesanal <i class="fa-solid fa-beer-mug-empty fa-ig"
+                        style="color: #ff0000;"></i></h2> <!--Icon ao lado do titulo -->
+                <p class="card-text-empresa">A Kreme é uma cervejaria artesanal que se destaca pela produção de cervejas
+                    de alta
+                    qualidade, focando em ingredientes naturais e processos tradicionais. Atuamos no segmento de bebidas
+                    artesanais, oferecendo uma variedade de estilos de cerveja que agradam tanto aos paladares mais
+                    tradicionais quanto aos que buscam novas experiências.
+                    Nosso processo de seleção de materiais é rigoroso e criterioso.</p>
+            </div> <!-- Final sobre Time Kremer meio da sessão FOTO -->
+        </div>
+    </section>
+    <section>
+        <div class="produtos-geral"> <!--Para controlar posição das demais divs -->
+            <div class="produtos-confira">
+                <h3 id="text-confira">Confira</h3>
+
+            </div>
+            <div class="nossos-produtos">
+                <h2 id="nossos-produtos-titulo-2">Nossos Produtos</h2>
+                <hr class="separador-produto">
+            </div>
+            <div class="variable-width"> <!-- Segundo carousel utilizando slick.js-->
+                <img class="img-slide-pordutos" src="/estagio HTM,CSS/slideProdutos/banner-dlifr.png" alt="">
+                <img class="img-slide-pordutos" src="/estagio HTM,CSS/slideProdutos/pexels-antonbru-4779182.png" alt="">
+            </div><!-- Final segundo carousel utilizando slick.js-->
+        </div>
+    </section>
+    <div class="container row" id="container-produtos-cervejas">
+        <!-- Div para controlar geral com bootstrap 4 sessão grind col-->
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <img class="size-img-produtos" src="/estagio HTM,CSS//imgPordutos/golden.png" alt="Imagem do cartão">
+            <div class="card-content-produtos ">
+                <h2 class="card-title-nomes">Cerveja Weiss Kremer
+                </h2>
+                <p>Teor Alcoólico: 4,8%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos">Com uma coloração dourada e espuma cremosa. <br>
+                    <br><strong>R$:13,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <!-- Div para controlar geral com bootstrap 4 sessão grind col-->
+            <img class="size-img-produtos" src="/estagio HTM,CSS//imgPordutos/img 3 sem fundo.png"
+                alt="Imagem do cartão">
+            <div class="card-content-produtos ">
+                <h2 class="card-title-nomes">Cerveja Golden Kremer
+                </h2>
+                <p>Teor Alcoólico 5,2%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos">Com uma coloração dourada e espuma cremosa. <br>
+                    <br><strong>R$:15,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <!-- Div para controlar geral com bootstrap 4 sessão grind col-->
+            <img class="size-img-produtos" src="/estagio HTM,CSS//imgPordutos/ipa.png" alt="Imagem do cartão">
+            <div class="card-content-produtos">
+                <h2 class="card-title-nomes">Cerveja Dunkel Kremer
+                </h2>
+                <p>Teor Alcoólico: 5,0%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos">
+                    Tão Nobre que você vai se sentir parte de uma Realeza
+                    <br>
+                    <br><strong>R$:18,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <!-- Div para controlar geral com bootstrap 4 sessão grind col-->
+            <img class="size-img-produtos" src="/estagio HTM,CSS//imgPordutos/cerveja-artesanal-ipa-kremer.png"
+                alt="Imagem do cartão">
+            <div class="card-content-produtos">
+                <h2 class="card-title-nomes">Cerveja Witbier Kremer
+                </h2>
+                <p>Teor Alcoólico: 4,8%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos"> Alguns momentos merecem realmente ser coroados
+
+                    . <br>
+                    <br><strong>R$:12,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <!-- Div para controlar geral com bootstrap 4 sessão grind col-->
+            <img class="size-img-produtos" src="/estagio HTM,CSS//imgPordutos/img 3 sem fundo.png"
+                alt="Imagem do cartão">
+            <div class="card-content-produtos">
+                <h2 class="card-title-nomes">Cerveja IPA Kremer
+                </h2>
+                <p>Teor Alcoólico: 4,8%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos">Um toque especial para matar a sua cede. <br>
+                    <br><strong>R$:14,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <!-- Div para controlar geral com bootstrap 4 sessão grind col-->
+            <img class="size-img-produtos" src="/estagio HTM,CSS//imgPordutos/ipa.png" alt="Imagem do cartão">
+            <div class="card-content-produtos">
+                <h2 class="card-title-nomes">Cerveja Weiss especial</h2>
+                <p>Teor Alcoólico: 5,3%</p>
+
+                <hr id="separador">
+                <p class="card-text-preços-produtos">A cerveja mais Vinkig que você era beber. <br>
+                    <br><strong>R$:16,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <!-- Div para controlar geral com bootstrap sessão grind col-->
+            <img class="size-img-produtos" src="/estagio HTM,CSS/imgPordutos/cerveja-artesanal-ipa-kremer.png"
+                alt="Imagem do cartão">
+            <div class="card-content-produtos">
+                <h2 class="card-title-nomes">Cerveja Skull gold</h2>
+                <p>Teor Alcoólico: 4,2%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos">Com um malte puro e um saber Impecável. <br>
+                    <br><strong>R$:19,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+        <div class="card-preços class= col-md-3 col-sm-6 col-12 mb-4">
+            <img class=" size-img-produtos" src="/estagio HTM,CSS/imgPordutos/golden.png" alt="Imagem do cartão">
+            <div class="card-content-produtos">
+                <h2 class="card-title-nomes">Cerveja gold german</h2>
+                <p>Teor Alcoólico: 5,1%</p>
+                <hr id="separador">
+                <p class="card-text-preços-produtos">Entre os mais clássicos estilos de cervejas alemãs da família. <br>
+                    <br><strong>R$:22,99</strong>
+                </p>
+                <a href="#" class="card-button-preço">Comprar</a>
+            </div>
+        </div>
+    </div> <!-- Final div produtos/cervejas-->
+    <div class="container-formes"> <!-- Container de formulario para contato-->
+        <div class="form-container">
+            <h2 id="paragrafo-forms">Soliceite uma visita <i class="fa-solid fa-car-side fa-xs"
+                    style="color: #ffffff;"></i></h2> <!-- biblioteca icon fontawesome-->
+            <form action="submit_form.js" method="POST">
+                <input type="text" name="name" placeholder="Nome" required><!-- Nome-->
+                <input type="email" name="email" placeholder="Email" required><!-- E-mail-->
+                <input type="tel" name="phone" placeholder="Telefone" required><!-- Telefone-->
+                <input type="text" name="subject" placeholder="Assunto" required><!--Assunto-->
+                <textarea name="message" rows="5" placeholder="Mensagem" required></textarea> <!-- Área de digitação-->
+                <button type="submit">Enviar</button> <!-- botão enviar-->
+            </form>
+        </div>
+        <div class="image-container"></div><!-- IMG container forms via css-->
+    </div>
+
+    <footer class="footer"> <!--  Inicio Footer-->
+        <div class="container">
+            <div>
+                <h3>Sobre Nós</h3>
+                <p>A Kremer Cervejaria é uma renomada produtora de cervejas artesanais localizada em Indaiatuba, São
+                    Paulo. Fundada em 2016, a empresa destaca-se pela fabricação de bebidas de alta qualidade,
+                    utilizando ingredientes selecionados e métodos tradicionais.</p>
+            </div>
+            <div>
+                <h3>Links Úteis</h3>
+                <a href=#>Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>Email: Kremer@hotmail.com</p>
+                <p>Telefone: (13) 1234-89744</p>
+                <p>Endereço: São vicente/SP - CEP - 11548254</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a id="facebook-footer" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a id="twitter-footer" href="#"><i class="fab fa-twitter"></i></a>
+            <a id="instagram-footer" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Kremer. Todos os direitos reservados.</p>
+    </footer> <!--  Final Footer-->
+
+    <!--  Scripts como Jquery, JS, CSS e pasta direto para o JS -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+        integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--  scripts utilizados-->
+</body>
+
+</html>

@@ -1,0 +1,659 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #3b1402;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Inicio hedear */
+header,
+ul,
+a {
+    /* Inicio nav */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+    color: rgb(129, 128, 126);
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+header {
+    /* ajuste hedear*/
+    height: 100px;
+    position: fixed;
+    top: 0;
+}
+
+#remove-sublime {
+    text-decoration: none;
+    /* tirando sublimi do a href */
+}
+
+#span-two-nav-contato {
+    /* Ajuste do  Span de contato   */
+    color: white;
+    background-color: #ffffff;
+    border-radius: 30px;
+    height: 35px;
+    width: 145px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+#img-logo-cerveja {
+    /*  tamanho do logo IMG*/
+    height: 40px;
+    width: auto;
+}
+
+/* Final hedear */
+
+/* slides primeira Sessão */
+.slick-prev,
+.slick-next {
+    /* tornando esse elemente oculto*/
+    z-index: hidden;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    /* ajuste botão next*/
+
+    right: 25px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    /* ajuste botão next*/
+    font-size: 30px;
+}
+
+.slick-track {
+    /* ajuste primeiro slide tamanhos etc*/
+    top: 0;
+    margin-top: 72px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 100%;
+}
+
+/* final slide slick.js*/
+/* confirm js */
+.hidden {
+    display: none;
+}
+
+#custom-confirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-content {
+    background-color: #7c1717;
+    /* Cor de fundo personalizada */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.confirm-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* inicio Informaçoes segunda sessão*/
+#container-geral-info {
+    /* ajuste direção container infomaçoes/empresa*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Inicio Card Sobre Compromisso, Dedicação Variedade, Ingredientes*/
+
+.card-sessao-empresa {
+    /* estilos para Card info empresa*/
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(5, 4, 4, 0.795);
+    max-width: 290px;
+    text-align: center;
+    height: 300px;
+    width: 290px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#img-sobre-card {
+    /* ajuste img dentro dos cards*/
+    height: 130px;
+    width: auto;
+    margin-top: 7px;
+}
+
+.card img {
+    /* se ajusta dentro do card as img*/
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    /* ajuste de posição do conteudo dentro*/
+    padding: 15px;
+}
+
+.card-title {
+    /* stile e tamanho das fonts*/
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.card-text {
+    /* stylo e cor do texto*/
+    color: #666;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+/* Fim Card Sobre Compromisso, Dedicação Variedade, Ingredientes*/
+
+/* Inicio Sobre a empresa/ Funcionarios */
+
+.container-name-empresa {
+    /* ajuste direção logo Kremer*/
+    text-align: center;
+    margin-top: 100px;
+}
+
+#logo-kremer-sobre {
+    /* Logo Kremer meio sessão*/
+    height: 55px;
+    width: auto;
+}
+
+.card-empresa-sobre {
+    /* Ajuste texto card empresa/funcionarios*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #0000001f;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.card-img {
+    /*ajuste Card funcionarios/empresa*/
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-content-empresa-sobre {
+    margin-top: -20px;
+    flex: 1;
+}
+
+.card-text-empresa {
+    /* estilos e cores Card sobre empresa e funcionarios*/
+    font-size: 1em;
+    color: #ddddddbd;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+}
+
+.produtos-confira {
+    /* margin dos titulos Confira-Nossos Produtos*/
+    margin-top: 50px;
+}
+
+#text-confira {
+    /* cor e font texto confira*/
+    color: rgb(175, 171, 171);
+    font-size: 18px;
+}
+
+#nossos-produtos-titulo-2 {
+    /* Titulo a cima do slide 2 "Nossos Produtos"*/
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.separador-produto {
+    /* separador hr*/
+    background-color: white;
+    width: 30px;
+}
+
+.card-title-empresa {
+    /* cores title card empresa/Icon*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-slide-pordutos {
+    /* tamanho e largura segundo slide*/
+    height: 450px;
+    width: 100%;
+}
+
+/* Final Sobre a empresa/ Funcionarios */
+
+/* Inicio Nosso produtos */
+
+#container-produtos-cervejas {
+    /* PRODUTOS Ajusta espaço da margin do top*/
+    padding-top: 130px;
+}
+
+.produtos-geral {
+    /* Titulos a cima do slide 2 "Confira/ Nossos Produtos" para centralizar*/
+    text-align: center;
+}
+
+h3 {
+    /* Texto (Kreme Cervejaria Artesanal) */
+    color: #a8a8a8a1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#produtos {
+    /* Font dos produtos  */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-preços {
+    /* ajusta a descrição dos procutos*/
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-content-produtos {
+    padding: 15px;
+}
+
+.card-text-preços-produtos {
+    /* Preços e descrição do produto*/
+    color: #ffffff;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.card-button-preço {
+    /* Style botão de compra*/
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.size-img-produtos {
+    /* Tamanho IMG produtos/cervejas*/
+    height: 105px;
+}
+
+.card-title-nomes {
+    /* Nome das Cervejas/fonts*/
+    color: rgb(214, 214, 214);
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#container-produtos-cervejas {
+    /* direção do container/ produtos*/
+    flex-wrap: wrap;
+    margin-left: 90px;
+    margin-top: -150px;
+}
+
+p {
+    /* ajuste cor e font Teor Alcoólico: 4,8%*/
+    color: rgb(1, 214, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#separador {
+    /* hr dos produtos*/
+    background: white;
+}
+
+/* Final produtos*/
+.container-formes {
+    display: flex;
+    background: #0000001f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 750px;
+    margin: 0 auto;
+
+}
+
+/* Inicio forms*/
+.form-container {
+    padding: 20px;
+    max-width: 400px;
+
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+.form-container input,
+.form-container textarea {
+    /* Ajust inputs*/
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc50;
+    border-radius: 4px;
+    background: transparent;
+
+}
+
+#paragrafo-forms {
+    color: white;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    background-image: url("/estagio HTM,CSS//imgPordutos/golden.png");
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+}
+
+/* final forms*/
+
+/* Inicio Menu respansivo */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Final Menu respansivo */
+
+/* inicio footer*/
+
+.footer {
+    margin-top: 30px;
+    background-color: #3333338e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer .container div {
+    flex: 1 1 200px;
+    margin: 20 px;
+}
+
+.footer h3 {
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.footer p,
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    background: none;
+    width: auto;
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+/* Final footer*/
+
+/* Inicio Sessão de hovers*/
+#img-logo-cerveja:hover {
+    transform: scale(1.1)
+}
+
+#span-two-nav-contato:hover {
+    transform: scale(1.1);
+}
+
+#remove-sublime:hover {
+    color: #fffffffa;
+    transform: scale(1.2)
+}
+
+.card-sessao-empresa:hover {
+    transform: scale(1.1);
+    color: #318500;
+
+}
+
+.card-text:hover {
+    color: #000000;
+}
+
+.size-img-produtos:hover {
+    transform: rotate(5deg);
+}
+
+.card-button-preço:hover {
+    text-decoration: none;
+}
+
+#instagram-footer:hover {
+    color: #ff0080;
+    transform: scale(1.1);
+
+}
+
+#twitter-footer:hover {
+    color: #188fff;
+    transform: scale(1.1);
+
+}
+
+#facebook-footer:hover {
+    color: #0053a0;
+    transform: scale(1.1);
+
+}
+
+/* Final Sessão de hovers*/
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        background-color: #000000;
+        width: 100%;
+        position: fixed;
+        height: 250px;
+    }
+
+    body {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    li a {
+        margin: 5px;
+    }
+
+    .nav-menu.active {
+        /* ativar o menu conforme a diminuição da tela*/
+        display: flex;
+    }
+
+    .nav-menu li {
+        /* Alinhar menu respansivo*/
+
+        margin: -15px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        /* mostrar menu respansivo na nav*/
+        display: flex;
+    }
+
+    #span-two-nav-contato {
+        /* remover span de contato da nave*/
+        display: none;
+    }
+
+    .slick-track {
+        /* tamanho e largura Frist slide slick.js*/
+        height: 300px;
+        width: 100%;
+    }
+
+    #container-geral-info {
+        /* alinhar container sobre Compromisso, Dedicação, Variedade e Ingredientes*/
+        flex-direction: column;
+    }
+
+    span {
+        /* Ajusta direção do span na barra nav (logo Kremer)*/
+        margin-right: -15px;
+    }
+
+    .card-empresa-sobre {
+        /* alinhar card sobre empresa*/
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card-img {
+        /* ajusta centralização da img com  funcionarios */
+        margin-left: 25px;
+    }
+
+    #container-produtos-cervejas {
+        /* definir margin dos produtos*/
+        max-width: 370px;
+        margin-top: -60px;
+    }
+
+    .image-container {
+        /* remover img do forms ao chegar em tal tamanho*/
+
+        background-image: none;
+        max-width: 400px;
+    }
+
+    .container-formes {
+        /* limitar largura do forms*/
+        max-width: 370px;
+    }
+
+    .footer {
+        text-align: left;
+        width: 100%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-slide-pordutos {
+        /* ajusta tamanho do segundo slide*/
+        height: 300px;
+        width: 100%;
+    }
+}
